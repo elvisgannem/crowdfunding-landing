@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/be5a9998b5.js" crossorigin="anonymous"></script>
+  
+  <title>Mastercraft Bamboo by Elvis Gannem</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<div id="bg">
+<body id="body">
+
+  <header class="hero">
+
+    <nav>
+
+      <div class="logo">
+        <img src="/images/logo.svg" alt="">
+      </div>
+      <!-- <div class="menu">
+        <ul>
+          <li class="itemOne">About</li>
+          <li class="itemTwo">Discover</li>
+          <li class="itemTwo">Get Started</li>
+        </ul>
+      </div> -->
+    </nav>
+
+  </header>
+
+  <main id="main">
+
+    <div class="cardOne">
+
+      <div class="content">
+        <img src="./images/logo-mastercraft.svg" alt="" class="cardOne__img">
+        <h2 class="cardOne__h2">Mastercraft Bamboo Monitor Riser</h2>
+        <p class="cardOne__p">A beautifully handcrafted monitor stand to reduce neck and eye strain</p>
+    </div>
+      <div class="buttons">
+        <button class="buttons__button hovBtn" onclick="backThisProject()">Back this project</button>
+        <i class="fas fa-bookmark" onclick="bookmarkClicked()"></i>
+      </div>
+
+    </div>
+
+    <div class="cardOne cardTwo">
+      
+      
+      <div class="section">
+        <div class="intern">
+           <h2 class="crowTitle">$89,914</h2>
+            <p class="crowTarget">of $100,000 backed</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="intern">
+          <h2 class="crowTitle">5,007</h2>
+          <p class="crowTarget">total backers</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="intern">
+          <h2 class="crowTitle">56</h2>
+          <p class="crowTarget">days left</p>
+        </div>
+
+      </div>
+
+    <div id="progress">
+      <div></div>
+    </div>
+
+    </div>
+
+
+
+    <div class="cardOne cardThree">
+
+      <h2 class="titleAbout">About this project</h2>
+
+      <p class="pAbout">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+
+      <p class="pAbout">Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+
+
+      <!-- CARD REWARD ONE -->
+
+      <div class="cardReward">
+        
+        <div class="cardReward__div">
+          <h3 class="cardReward__h3">Bamboo Stand</h3>
+          <p class="cardReward__p__price">Pledge $25 or more</p>
+          <p class="cardReward__p">You get an ergonomic stand made of natural bamboo. You've helped us launch or promotional campaign, and you'll be added to a special Backer member list.</p>
+        </div>
+        
+        <div class="cardRewardContainer">
+          <div class="cardReward___div">
+            <p class="div__p">101</p>
+            <p class="div___p">left</p>
+          </div>
+
+          <div class="button">
+            <button class="rewardButton hovBtn" onclick="rewardWindow()">Select Reward</button>
+          </div>
+      </div>
+        
+      </div>
+
+
+<!-- CARD REWARD TWO -->
+
+      <div class="cardReward">
+        
+        <div class="cardReward__div">
+          <h3 class="cardReward__h3">Black Edition Stand</h3>
+          <p class="cardReward__p__price">Pledge $75 or more</p>
+          <p class="cardReward__p">You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer member list. Shipping is included</p>
+        </div>
+        
+        <div class="cardRewardContainer">
+        <div class="cardReward___div">
+          <p class="div__p">64</p>
+          <p class="div___p">left</p>
+        </div>
+
+        <div class="button">
+          <button class="rewardButton hovBtn" onclick="rewardWindow()">Select Reward</button>
+        </div>
+      </div>
+        
+      </div>
+
+      <!-- CARD REWARD THREE -->
+
+      <div class="cardReward opacity">
+        
+        <div class="cardReward__div">
+          <h3 class="cardReward__h3">Mahogany Special Edition</h3>
+          <p class="cardReward__p__price">Pledge $200 or more</p>
+          <p class="cardReward__p">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You'll be added to our Backer member list. Shipping is included.</p>
+        </div>
+        
+        <div class="cardRewardContainer">
+        <div class="cardReward___div">
+          <p class="div__p">0</p>
+          <p class="div___p">left</p>
+        </div>
+
+        <div class="button">
+          <button class="outButton">Out of Stock</button>
+        </div>
+      </div>
+        
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- REWARD POP UP WINDOW  -->
+  
+  <div id="rewardWindow"></div>
+  <div id="backProject"></div>
+
+  <script src="./scripts/bookmarkClicked.js"></script>
+  <script src="./scripts/rewardWindow.js"></script>
+  <script src="./scripts/closeRewardWindow.js"></script>
+  <script src="./scripts/backThisProject.js"></script>
+  <script src="./scripts/closeThanksWindow.js"></script>
+  <script src="./scripts/selectReward.js"></script>
+
+</body>
+</div>
+</html>
