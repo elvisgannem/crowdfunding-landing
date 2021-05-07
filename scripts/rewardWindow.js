@@ -4,7 +4,7 @@ function rewardWindow() {
     rewardWindow.innerHTML =`
 
         <div class="rewardWindow">
-            <img src="../images/icon-close-modal.svg" class="rewardImg" onclick="closeRewardWindow()"/>
+            <img src="https://raw.githubusercontent.com/elvisgannem/crowfunding-landing/caaf37376d0717c9c7bc0b39153996faee43df56/images/icon-close-modal.svg" class="rewardImg" onclick="closeRewardWindow()"/>
             <h3 class="rewardTitle">Back this project</h3>
             <p class="rewardDescription">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
         
